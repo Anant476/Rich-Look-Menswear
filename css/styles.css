@@ -1,0 +1,160 @@
+    :root {
+  --primary: #0f3d91;          /* deeper navy */
+  --accent: #e09f3e;           /* richer gold */
+  --accent-dark: #c78220;
+  --bg: #f2f5fa;               /* softer off-white */
+  --card-bg: #ffffff;
+  --radius: .75rem;
+  --shadow: 0 20px 50px -10px rgba(15, 61, 145, 0.15);
+  --text: #222940;             /* slightly darker for better legibility */
+}
+
+    * { box-sizing:border-box; }
+    body {
+      background: var(--bg);
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;;
+      color: #2d2d2d;
+      min-height: 100vh;
+    }
+    h1, .display-5, .navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+}
+    h1, .display-5 {
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: .5px;
+    }
+    .navbar-brand {
+  font-weight: 700;
+  font-size: 1.75rem; /* bigger */
+  letter-spacing: 0.5px;
+  margin-right: 1rem;
+  color: var(--primary) !important;
+}
+
+    
+    .card {
+      border: none;
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+    .btn-accent {
+      background: var(--accent);
+      color: #1f1f1f;
+      border-radius: 999px;
+      font-weight: 700;
+      border: none;
+      box-shadow: 0 8px 25px rgba(225,159,62,0.35); 	
+    }
+    .btn-accent:hover {
+	
+  background: var(--accent-dark);
+  color: #fff;
+      filter: brightness(1.05);
+    }
+.btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+.btn-outline-light:hover {
+  background: rgba(255,255,255,0.1);
+}
+    .product-title {
+      color: var(--primary);
+      font-size: .95rem;
+      font-weight: 600;
+      margin-bottom: .25rem;
+    }
+    .price {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #d9534f;
+      margin-bottom: .5rem;
+    }
+    .badge-whatsapp {
+      background: #25D366;
+      color: white;
+      font-size: .65rem;
+      padding: 3px 8px;
+      border-radius: 6px;
+      margin-right: 4px;
+    }
+    .hero {
+      background: url('https://placehold.co/1200x400/1f3a93/ffffff?text=Summer+Collection') center/cover no-repeat;
+      border-radius: 1rem;
+      position: relative;
+      overflow: hidden;
+      padding: 80px 50px;
+      margin-bottom: 40px;
+    }
+    .hero-overlay {
+      background: rgba(0,0,0,0.55);
+      position: absolute;
+      inset: 0;
+      border-radius: 1rem;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+    }
+.hero-content h1,
+.hero-content p {
+  text-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+    .category-card {
+      border-radius: .75rem;
+      background: #fff;
+      padding: 1rem;
+      transition: transform .2s ease;
+      height: 100%;
+    }
+    .category-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 20px 50px -10px rgba(0,0,0,0.08);
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1100;
+    }
+    .floating-whatsapp {
+      background: #25d366;
+      color: #fff;
+      border: 2px solid #1f3d91;
+      border-radius: 50px;
+      padding: .75rem 1rem;
+      font-weight: 600;
+      box-shadow: 0 15px 40px -10px rgba(37,211,102,0.4);
+    }
+    #cart-panel {
+      min-width: 260px;
+      max-width: 340px;
+      border-radius: .75rem;
+    }
+    /* ribbon */
+    .ribbon {
+      position: absolute;
+      top: 10px;
+      left: -5px;
+      background: #d9534f;
+      color: #fff;
+      padding: 5px 12px;
+      font-size: .6rem;
+      font-weight: 700;
+      transform: rotate(-15deg);
+      border-radius: 4px;
+      letter-spacing: .5px;
+    }
+    .admin-btn {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      z-index: 1200;
+    }
